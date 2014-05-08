@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>¿Qué puede hacer Drupal por mí? - Carlos Reig</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+        
+        <style>
+            html.final {
+                background-image: url('img/esoEsTodoAmigos.jpg');
+            }
+        </style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Drupal</h1>
+					<h3>¿Qué puede hacer Drupal por mí?</h3>
+				</section>
+
+				<section>
+					<h2>¿Quién soy?</h2>
+					
+						<ul style="list-style: none; text-align: right; margin-top: 50px;">
+                            <li>Carlos Reig</li>
+                            <li>Ingeniero informático por la ETSE-UV</li>
+                            <li>Miembro de la Asociación Española de Drupal</li>                            
+                        </ul>
+                        <img style="float:right; margin-left: 30px" src="img/fotoPresentacion.jpg">
+                    
+                        <ul style="list-style: none; float: left; margin-top: 100px;">
+                            <li><img style="margin: 0; border: 0" src="img/logoAED.png"></li>
+                            <li>http://asociaciondrupal.es/</li>
+                        </ul>
+                    
+                        <ul style="list-style: none; position: absolute; margin-top: 100px; right: 0">
+                            <li><img style="margin: 0; border: 0; background: none" src="img/twitterLogo.png"></li>
+                            <li>@unstatu</li>
+                        </ul>
+
+					<aside class="notes">
+						La AED es una asociación y por lo tanto no existe ánimo de lucro. Organiza eventos de Drupal de todo tipo y en toda España. También talleres online.
+					</aside>
+				</section>
+            
+                <section>
+                    <h2>¿Qué vamos a hacer hoy?</h2>
+                    <ol>
+                        <li>Hablar un poquito sobre software libre, CMSs y dónde encaja Drupal</li>
+                        <li>¿Y hay trabajo de esto?</li>
+                        <li>¡Manos a la obra!</li>
+                        <li>Vista aérea alrededor de Drupal</li>
+                        <li>Money, money, money</li>
+                    </ol>
+                </section>
+
+				<section>
+					<h2>Software libre</h2>
+                    <div>
+                        <blockquote style="float: left" cite="https://www.gnu.org/philosophy/free-sw.es.html">
+                            «Software libre» es el software que respeta la libertad de los usuarios y la comunidad. En grandes líneas, significa que los usuarios tienen la libertad para ejecutar, copiar, distribuir, estudiar, modificar y mejorar el software. Es decir, el «software libre» es una cuestión de libertad, no de precio. Para entender el concepto, piense en «libre» como en «libre expresión», no como en «barra libre».
+                        </blockquote>
+                        <img src="img/RichardStallman.jpg" stlye="float: right">
+                        <aside class="notes">
+						Hablar sobre las comunidades que se crean alrededor. Colaboración entre personas desde distintas partes del mundo.
+					</aside>
+                    </div>
+				</section>
+
+				<section>
+					<h2>Ejemplos de software libre</h2>
+					
+                    <ul>
+                        <li><strong>LINUX</strong></li>
+                        <li>Apache ~ 50%</li>
+                        <li>sendmail, postfix, qmail... ~ 70%</li>
+                        <li>NodeJS</li>
+                        <li>Apache Cordova</li>
+                        <li>GIMP, LibreOffice, MariaDB y muchos más</li>
+                    </ul>
+                    <p style="margin-top: 50px">
+                        Y, por supuesto, <strong>Drupal</strong>.
+					</p>
+                    
+                    <aside class="notes">
+						  Reveal.js también. NodeJs.
+				    </aside>
+				</section>
+
+				<section>
+					<h2>¿Qué es un CMS?</h2>
+					<blockquote>
+						Un sistema de gestión de contenidos o CMS es un programa que permite crear una estructura de soporte para la creación y administración de contenidos, principalmente en páginas web, por parte de los administradores, editores, participantes y demás usuarios.
+					</blockquote>
+				</section>
+                
+                <section>
+                    <h2>CMS más famosos</h2>
+                    <ul>
+                        <li>Drupal (el primero, cómo no ;))</li>
+                        <li>Wordpress</li>
+                        <li>Joomla</li>
+                        <li>Moodle</li>
+                        <li>MediaWiki</li>
+                        <li>Y <a href="http://en.wikipedia.org/wiki/List_of_content_management_systems">muchos más</a></li>
+                    </ul>
+                </section>
+
+				<section>
+					<h2>Drupal es más que un CMS</h2>
+                    <p>Nuevo nombre: CMF <br /> (Content Management Framework)</p>
+                    <aside class="notes">
+                        Ejemplo de lápices de colores
+                    </aside>
+				</section>
+                
+                <section data-background="#007777" data-transition="linear">
+                    <h2>Drupal sobretodo es una comunidad</h2>
+                    
+                    <small>Vendrás por el código y te quedarás por la comunidad</small>
+                    
+                    <aside class="notes">
+                        1.058.000 en 230 paises registrados en Drupal .org
+						  26.500 módulos contribuidos. 2000 themes, 33000 desarrolladores (gente que ha hecho commits)
+                        esta semana: 2700 commits 
+                        4500 issue comments. #drupal-es, listas de correo
+				    </aside>
+                </section>
+                
+                <section>
+                    <h2>¿Quién usa Drupal?</h2>
+                    <p>Drupal se usa en más de <strong>1 millón de sitios web</strong>.<br/>Representa un ~7% de todos las webs basadas en CMS</p>
+                    <p style="padding: 30px 0 10px">Los casos más sonados son...</p>
+                    <ul>
+                        <li>La casa blanca</li>
+                        <li>Museo Louvre &amp; Museo Reina Sofía</li>
+                        <li>Twitter &amp; Paypal Developers Sites</li>
+                        <li>ING.us</li>
+                        <li>Ubuntu</li>
+                        <li>The Economist</li>
+                        <li>Tienda de UNICEF</li>
+                        <li>Generalitat de Catalunya</li>
+                        <li>idealista.com/news</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Drupal 8 está al caer</h2>
+                    <img style="background-color: #eee"  src="img/logoDrupal8.png">
+                    <aside class="notes">Mediados de 2015 tendremos Drupal 8. Symfony 2: Twig, Routing, Dependency Injection, etc.</aside>
+                </section>
+
+				<section data-background="#4d7e65">
+					<h2>¿Y hay trabajo de Drupal?</h2>
+                    <p>En <strong>España</strong> tenemos...</p>
+					<ol style="margin-top: 50px">
+						<li>440 ofertas de trabajo buscando "PHP"</li>
+						<li>59 ofertas de trabajo buscando "Drupal"</li>
+                        <aside class="notes">
+                            13%
+                        </aside>
+					</ol>
+				</section>
+                
+                <section data-background="#4d7e65">
+                    <h2>El CV no está de moda</h2>
+                    
+                    <p>Tener un buen CV no es tan importante como antes.<br />Las empresas TIC empiezan a usar otros métodos de reclutamiento:</p>
+                    
+                    <ol>
+                        <li>GitHub</li>
+                        <li>StackOverflow</li>
+                        <li>LinkedIn</li>
+                        <li>Participación en eventos</li>
+                        <li>Y, por supuesto, Drupal.org</li>
+                    </ol>
+                    <aside class="notes">Por eso es muy importante colaborar en proyectos que se muevan. Cuanto más importante es el proyecto más renombre te da colaborar en él.</aside>
+                </section>
+                
+                <section data-transition="linear" data-background="#8c4738">
+                    <h2>Es tiempo de demo</h2>
+                    <p>Vamos a hacer una galería de arte</p>
+                </section>
+                
+                <section data-background="#8c4738">
+                    <h2>¿Qué hay alrededor de Drupal?</h2>
+                    <ul style="list-style: none">
+                        <li><strong>Módulos</strong>: proporcionan nuevas funcionalidades al sistema</li>
+                        <li><strong>Themes</strong>: para cambiar la apariencia del sitio</li>
+                        <li><strong>Distribuciones</strong>: paquetes preconfigurados, tiendas, webs de noticias..</li>
+                    </ul>
+                    
+                    <small style="margin-top: 25px">Y más cosas...</small>
+                    
+                </section>
+                
+				<section>
+					<h2>Módulos más utilizados</h2>
+					<ul style="list-style: none">
+                        <li>Views</li>
+                        <li>Context</li>
+                        <li>Features</li>
+                        <li>Commerce</li>
+                        <li><a href="https://drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=&f%5B3%5D=drupal_core%3A103&f%5B4%5D=sm_field_project_type%3Afull&text=&solrsort=iss_project_release_usage+desc&op=Search">Y muchos más</a></li>
+                    </ul>
+				</section>
+                
+                <section>
+                    <h2>¿He oído commerce?</h2>
+                    <p>A ver qué tal va</p>
+                </section>
+                
+                <section>
+                    <h1>¿Te gusta lo que has visto?</h1>
+                </section>
+                
+                <section>
+                    <h2>DrupalCamp 2014 Valencia</h2>
+                    <img src="img/logoDrupalcamp.png" />
+                    <p>16, 17 y 18 de mayo</p>
+                    <p><a href="http://www.drupalcamp.es">http://www.drupalcamp.es</a></p>
+                    <p><strong>Código de descuento</strong>: DCVALENCIA-STUDENT</p>
+                    <aside class="notes">Edificio bancaja</aside>
+                </section>
+                
+                <section>
+                    <img src="img/drupaleros.jpg">
+                    
+                    <ul style="list-style: none">
+                        <li>Charlas técnicas</li>
+                        <li>Charlas diseño</li>
+                        <li>Charlas sistemas</li>
+                        <li>Ronda de job speed dating con empresas</li>
+                        <li>Formación intensiva con talleres</li>
+                        <li><strong>Y mucha comunidad</strong></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h1>¿Dudas?</h1>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
